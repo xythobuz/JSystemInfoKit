@@ -31,6 +31,6 @@ More coming soon!
 
 ## Licensing
 
-SystemInfoKit is released under the GPL V2 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit" and the black version of the SystemInfoKit logo (shown below).
+SystemInfoKit is released under the GPL V2 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit" and the black version of the SystemInfoKit logo (shown below) in the app's about window.
 
 ![Logo](/Small Icon.png)
