@@ -21,8 +21,6 @@ SystemInfoKit provides a comprehensive system monitoring class which can be used
 
 SystemInfoKit is broken up into 3 main modules: JSKDevice, which accesses device information, JSKSMC, which accesses the SMC, and JSKSystemMonitor, which can be used for system monitoring.
 
-More coming soon!
-
 ### JSKDevice
 
 ### JSKSMC
@@ -35,6 +33,9 @@ Issues and pull requests are welcome!
 
 ## Licensing
 
-SystemInfoKit is released under the GNU GPL v2.0 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit" and the black version of the SystemInfoKit logo (shown below) in the app's about window.
+SystemInfoKit is released under the GNU GPL v2.0 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit." and the black version of the SystemInfoKit logo in the app's about window.
 
-![Logo](/Small Icon.png)
+#### Example:
+Powered by [SystemInfoKit](https://github.com/jBot-42/JSystemInfoKit)
+
+![Logo](/Small Icon.png =120x)

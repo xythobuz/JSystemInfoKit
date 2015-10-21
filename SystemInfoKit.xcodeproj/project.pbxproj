@@ -29,6 +29,7 @@
 		1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */; settings = {ASSET_TAGS = (); }; };
 		1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */; settings = {ASSET_TAGS = (); }; };
 		1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1D43C52E1BD728E8001D8A55 /* .travis.yml */; settings = {ASSET_TAGS = (); }; };
+		1D43C5311BD7DFFA001D8A55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5301BD7DFFA001D8A55 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMBatteryUsageInfo.h; sourceTree = "<group>"; };
 		1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMBatteryUsageInfo.m; sourceTree = "<group>"; };
 		1D43C52E1BD728E8001D8A55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		1D43C5301BD7DFFA001D8A55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1D43C52E1BD728E8001D8A55 /* .travis.yml */,
+				1D43C5301BD7DFFA001D8A55 /* README.md */,
 				1D43C5221BD5A90A001D8A55 /* IOKit.framework */,
 				1D43C4CC1BD49B78001D8A55 /* SystemInfoKit */,
 				1D43C50F1BD56B1D001D8A55 /* SystemInfoKitTests */,
@@ -301,6 +304,7 @@
 				1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */,
 				1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */,
 				1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */,
+				1D43C5311BD7DFFA001D8A55 /* README.md in Sources */,
 				1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */,
 				1D43C4E01BD49DA4001D8A55 /* SMCWrapper.m in Sources */,
 			);
