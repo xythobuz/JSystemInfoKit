@@ -33,9 +33,10 @@ Issues and pull requests are welcome!
 
 ## Licensing
 
-SystemInfoKit is released under the GNU GPL v2.0 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit." and the black version of the SystemInfoKit logo (at least 160px width) in the app's about window.
+SystemInfoKit, SMCWrapper, and the original SMC tool are released under the GNU GPL v2.0 License.
 
-#### Example:
-Powered by [SystemInfoKit](https://github.com/jBot-42/JSystemInfoKit)
+### Copyright
 
-<img src="Small Icon.png" alt="Logo" width="160px"/>
+SystemInfoKit copyright © 2015 JRW (@jBot-42)
+SMCWrapper copyright © 2014 Fergus Morrow (@FergusInLondon)
+Apple SMC Tool copyright © 2006 devnull 
