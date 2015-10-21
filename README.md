@@ -1,7 +1,7 @@
 ![Logo](/Icon.png)
 
 # SystemInfoKit ![] (https://img.shields.io/travis/jBot-42/SystemInfoKit.svg)
-A comprehensive, compact*, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
+A comprehensive, compact, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
 
 ## Features
 
@@ -29,8 +29,8 @@ More coming soon!
 
 ### JSKSystemMonitor
 
-## Other Information
+## Licensing
 
-SystemInfoKit is released under the GPL V2 License.
+SystemInfoKit is released under the GPL V2 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit" and the black version of the SystemInfoKit logo (shown below).
 
-*Approx. 170 KB
+![Logo](/Small Icon.png)
