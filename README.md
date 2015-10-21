@@ -1,7 +1,7 @@
+![Logo](/Icon.png)
+
 # SystemInfoKit ![] (https://img.shields.io/travis/jBot-42/SystemInfoKit.svg)
 A comprehensive, compact*, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
-
-![Logo](/Icon.png)
 
 ## Features
 
