@@ -33,9 +33,9 @@ Issues and pull requests are welcome!
 
 ## Licensing
 
-SystemInfoKit is released under the GNU GPL v2.0 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit." and the black version of the SystemInfoKit logo in the app's about window.
+SystemInfoKit is released under the GNU GPL v2.0 License. However, it may be used for closed-source projects IF a link to this Github repository is made available along with the message "Powered by SystemInfoKit." and the black version of the SystemInfoKit logo (at least 160px width) in the app's about window.
 
 #### Example:
 Powered by [SystemInfoKit](https://github.com/jBot-42/JSystemInfoKit)
 
-![Logo](/Small Icon.png =120x)
+<img src="Small Icon.png" alt="Logo" width="160px"/>
