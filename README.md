@@ -1,5 +1,5 @@
 # SystemInfoKit ![] (https://img.shields.io/travis/jBot-42/SystemInfoKit.svg)
-A compact* but comprehensive system information framework for Cocoa on OS X. 
+A comprehensive, compact*, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
 
 ## Features
 
