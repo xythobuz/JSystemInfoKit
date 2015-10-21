@@ -3,7 +3,7 @@
 //  SystemInfoKit
 //
 //  Created by jBot-42 on 10/20/15.
-//  Copyright © 2015 jBot-42. All rights reserved.
+//  Copyright © 2015 jBot-42. Licensed under the GNU General Public License.
 //
 
 #import <Cocoa/Cocoa.h>
