@@ -1,0 +1,4 @@
+language: objective-c
+xcode_workspace: SystemInfoKit.xcworkspace
+xcode_scheme: SystemInfoKitTests
+osx_image: xcode7

@@ -28,6 +28,7 @@
 		1D43C5231BD5A90A001D8A55 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C5221BD5A90A001D8A55 /* IOKit.framework */; };
 		1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */; settings = {ASSET_TAGS = (); }; };
 		1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1D43C52E1BD728E8001D8A55 /* .travis.yml */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		1D43C5221BD5A90A001D8A55 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMBatteryUsageInfo.h; sourceTree = "<group>"; };
 		1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMBatteryUsageInfo.m; sourceTree = "<group>"; };
+		1D43C52E1BD728E8001D8A55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		1D43C4C01BD49B77001D8A55 = {
 			isa = PBXGroup;
 			children = (
+				1D43C52E1BD728E8001D8A55 /* .travis.yml */,
 				1D43C5221BD5A90A001D8A55 /* IOKit.framework */,
 				1D43C4CC1BD49B78001D8A55 /* SystemInfoKit */,
 				1D43C50F1BD56B1D001D8A55 /* SystemInfoKitTests */,
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				1D43C5181BD56B1D001D8A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
