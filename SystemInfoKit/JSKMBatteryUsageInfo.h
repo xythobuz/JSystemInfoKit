@@ -2,7 +2,7 @@
 //  JSKMBatteryUsageInfo.h
 //  SystemInfoKit
 //
-//  Created by Jack Whittaker on 10/20/15.
+//  Created by jBot-42 on 10/20/15.
 //  Copyright © 2015 jBot-42. All rights reserved.
 //
 
