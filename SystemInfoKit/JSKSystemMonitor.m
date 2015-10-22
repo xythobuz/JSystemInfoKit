@@ -258,6 +258,63 @@
     return (JSKMNetworkUsageInfo){totalInBytes, totalOutBytes};
 }
 
+- (JSKMNetworkReport *)networkInfo {
+    
+    NSString *ipAddress = @"";
+    
+    NSArray *addresses = [[NSHost currentHost] addresses];
+    
+    for (NSString *address in addresses) {
+        
+        if (![address hasPrefix:@"127"] && [[address componentsSeparatedByString:@"."] count] == 4) {
+            
+            ipAddress = address;
+        }
+    }
+    
+    if ([ipAddress isEqualToString:@""]) {
+        
+        ipAddress = [[NSHost currentHost] address];
+    }
+    
+    NSTask *task = [[NSTask alloc] init];
+    
+    [task setLaunchPath:@"/usr/bin/curl"];
+    [task setArguments:[NSArray arrayWithObjects:@"-s",@"http://checkip.dyndns.org", nil]];
+    
+    NSPipe *pipe = [NSPipe pipe];
+    
+    [task setStandardOutput:pipe];
+    [task launch];
+    
+    NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
+    
+    NSString *dataString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    
+    NSMutableString *publicIpAddress = [NSMutableString stringWithCapacity:dataString.length];
+    
+    NSScanner *scanner = [NSScanner scannerWithString:dataString];
+    NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    
+    while ([scanner isAtEnd] == NO) {
+        
+        NSString *buffer;
+        
+        if ([scanner scanCharactersFromSet:numbers intoString:&buffer]) {
+            
+            [publicIpAddress appendString:buffer];
+            
+        } else {
+            
+            [scanner setScanLocation:([scanner scanLocation] + 1)];
+        }
+    }
+    
+    JSKMNetworkReport *report = [[JSKMNetworkReport alloc] initWithIpAddress:ipAddress publicIpAddress:publicIpAddress hostName:[[NSHost currentHost] name]];
+    
+    return report;
+}
+
 - (JSKMBatteryUsageInfo *)batteryUsageInfo {
     
     mach_port_t masterPort;

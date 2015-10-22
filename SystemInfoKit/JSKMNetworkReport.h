@@ -1,5 +1,5 @@
 //
-//  JSKDNetworkReport.h
+//  JSKMNetworkReport.h
 //  SystemInfoKit
 //
 //  Created by jBot-42 on 10/19/15.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JSKDNetworkReport : NSObject
+@interface JSKMNetworkReport : NSObject
 
 @property (strong) NSString *ipAddress;
 @property (strong) NSString *publicIpAddress;

@@ -6,7 +6,7 @@
 //  Copyright © 2015 jBot-42. Licensed under the GNU General Public License.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SystemInfoKit.
 FOUNDATION_EXPORT double SystemInfoKitVersionNumber;

@@ -42,7 +42,7 @@
     NSLog(@"CPU Vendor: %@", device.cpuInfo.vendor);
     NSLog(@"CPU Brand: %@", device.cpuInfo.brand);
     
-    NSLog(@"CPU Count: %lu", (unsigned long)device.cpuInfo.cpuCount);
+    NSLog(@"CPU Count: %lu", device.cpuInfo.cpuCount);
     NSLog(@"Core Count: %lu", device.cpuInfo.coreCount);
     NSLog(@"Thread Count: %lu", device.cpuInfo.threadCount);
     
@@ -52,6 +52,33 @@
     NSLog(@"L3 Cache: %f MB", device.cpuInfo.l3Cache);
     
     NSLog(@"CPU Architecture: %@", stringFromJSKDCPUArchitecture(device.cpuInfo.architecture));
+    
+    JSKSMC *smc = [JSKSMC smc];
+    
+    for (int i = 0; i < [[smc workingTempKeys] count]; i++) {
+        
+        NSLog(@"%@: %f degrees F", [smc humanReadableNameForKey:[smc.workingTempKeys objectAtIndex:i]], [smc temperatureInFahrenheitForKey:[smc.workingTempKeys objectAtIndex:i]]);
+    }
+    
+    for (int i = 0; i < [[smc workingVoltageKeys] count]; i++) {
+        
+        NSLog(@"%@: %f volts", [smc humanReadableNameForKey:[smc.workingVoltageKeys objectAtIndex:i]], [smc rawValueForKey:[smc.workingVoltageKeys objectAtIndex:i]]);
+    }
+    
+    for (int i = 0; i < [[smc workingCurrentKeys] count]; i++) {
+        
+        NSLog(@"%@: %f amps", [smc humanReadableNameForKey:[smc.workingCurrentKeys objectAtIndex:i]], [smc rawValueForKey:[smc.workingCurrentKeys objectAtIndex:i]]);
+    }
+    
+    for (int i = 0; i < [[smc workingPowerKeys] count]; i++) {
+        
+        NSLog(@"%@: %f watts", [smc humanReadableNameForKey:[smc.workingPowerKeys objectAtIndex:i]], [smc rawValueForKey:[smc.workingPowerKeys objectAtIndex:i]]);
+    }
+    
+    for (int i = 0; i < smc.numberOfFans; i++) {
+        
+        NSLog(@"Fan %d speed: %f RPM", i + 1, [smc speedOfFan:i]);
+    }
     
     JSKSystemMonitor *systemMonitor = [JSKSystemMonitor systemMonitor];
     
@@ -73,6 +100,12 @@
     
     NSLog(@"System Uptime: %f", systemMonitor.systemUptime);
     
+    JSKMNetworkReport *networkInfo = systemMonitor.networkInfo;
+    
+    NSLog(@"IP Address: %@", networkInfo.ipAddress);
+    NSLog(@"Public IP Address: %@", networkInfo.publicIpAddress);
+    NSLog(@"Host Name: %@", networkInfo.hostName);
+    
     JSKMBatteryUsageInfo *batteryUsageInfo = systemMonitor.batteryUsageInfo;
     
     NSLog(@"Battery Serial: %@", batteryUsageInfo.serial);
@@ -92,9 +125,9 @@
     NSLog(@"Battery Maximum Capacity: %f mAh", batteryUsageInfo.maximumCapacity);
     NSLog(@"Battery Current Capacity: %f mAh", batteryUsageInfo.currentCapacity);
     
-    NSLog(@"Battery Design Cycle Count: %lu Cycles", (unsigned long)batteryUsageInfo.designCycleCount);
-    NSLog(@"Battery Cycle Count: %lu Cycles", (unsigned long)batteryUsageInfo.cycleCount);
-    NSLog(@"Battery Age: %lu Days", (unsigned long)batteryUsageInfo.ageInDays);
+    NSLog(@"Battery Design Cycle Count: %lu Cycles", batteryUsageInfo.designCycleCount);
+    NSLog(@"Battery Cycle Count: %lu Cycles", batteryUsageInfo.cycleCount);
+    NSLog(@"Battery Age: %lu Days", batteryUsageInfo.ageInDays);
 }
 
 @end

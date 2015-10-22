@@ -12,7 +12,6 @@
 
 - (void)getSystemInfo;
 - (void)getCPUInfo;
-- (void)getNetworkInfo;
 
 @end
 
@@ -35,7 +34,6 @@
     if (self = [super init]) {
         
         [self getCPUInfo];
-        [self getNetworkInfo];
         [self getSystemInfo];
     }
     
@@ -126,63 +124,6 @@
     JSKDCPUReport *report = [[JSKDCPUReport alloc] initWithBrand:brand vendor:vendor cpuCount:count coreCount:coreCount threadCount:threadCount frequency:frequency l2Cache:l2Cache l3Cache:l3Cache architecture:architecture];
     
     self.cpuInfo = report;
-}
-
-- (void)getNetworkInfo {
-    
-    NSString *ipAddress = @"";
-    
-    NSArray *addresses = [[NSHost currentHost] addresses];
-    
-    for (NSString *address in addresses) {
-        
-        if (![address hasPrefix:@"127"] && [[address componentsSeparatedByString:@"."] count] == 4) {
-            
-            ipAddress = address;
-        }
-    }
-    
-    if ([ipAddress isEqualToString:@""]) {
-        
-        ipAddress = [[NSHost currentHost] address];
-    }
-    
-    NSTask *task = [[NSTask alloc] init];
-    
-    [task setLaunchPath:@"/usr/bin/curl"];
-    [task setArguments:[NSArray arrayWithObjects:@"-s",@"http://checkip.dyndns.org", nil]];
-    
-    NSPipe *pipe = [NSPipe pipe];
-    
-    [task setStandardOutput:pipe];
-    [task launch];
-    
-    NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
-    
-    NSString *dataString = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-    
-    NSMutableString *publicIpAddress = [NSMutableString stringWithCapacity:dataString.length];
-    
-    NSScanner *scanner = [NSScanner scannerWithString:dataString];
-    NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
-    
-    while ([scanner isAtEnd] == NO) {
-        
-        NSString *buffer;
-        
-        if ([scanner scanCharactersFromSet:numbers intoString:&buffer]) {
-            
-            [publicIpAddress appendString:buffer];
-            
-        } else {
-            
-            [scanner setScanLocation:([scanner scanLocation] + 1)];
-        }
-    }
-    
-    JSKDNetworkReport *report = [[JSKDNetworkReport alloc] initWithIpAddress:ipAddress publicIpAddress:publicIpAddress hostName:[[NSHost currentHost] name]];
-    
-    self.networkInfo = report;
 }
 
 - (void)getSystemInfo {

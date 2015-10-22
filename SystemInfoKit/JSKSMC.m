@@ -34,6 +34,9 @@
     
     if (self = [super init]) {
         
+        // Open the SMC connection
+        self.smc = [SMCWrapper sharedWrapper];
+        
         self.allTempKeys = @[ @"TCXC", @"TCXc", @"TC0P", @"TC0H", @"TC0D", @"TC0E", @"TC0F", @"TC1C", @"TC2C", @"TC3C", @"TC4C", @"TC5C", @"TC6C", @"TC7C", @"TC8C", @"TCAH", @"TCAD", @"TC1P", @"TC1H", @"TC1D", @"TC1E", @"TC1F", @"TCBH", @"TCBD", @"TCSC", @"TCSc", @"TCSA", @"TCGC", @"TCGc", @"TG0P", @"TG0D", @"TG1D", @"TG0H", @"TG1H", @"Ts0S", @"TM0P", @"TM1P", @"TM8P", @"TM9P", @"TM0S", @"TM1S", @"TM8S", @"TM9S", @"TN0D", @"TN0P", @"TN1P", @"TN0C", @"TN0H", @"TP0D", @"TPCD", @"TP0P", @"TA0P", @"TA1P", @"Th0H", @"Th1H", @"Th2H", @"Tm0P", @"Tp0P", @"Ts0P", @"Tb0P", @"TL0P", @"TW0P", @"TH0P", @"TH1P", @"TH2P", @"TH3P", @"TO0P", @"Tp0P", @"Tp0C", @"TB0T", @"TB1T", @"TB2T", @"TB3T", @"Tp1P", @"Tp1C", @"Tp2P", @"Tp3P", @"Tp4P", @"Tp5P", @"TS0C", @"TA0S", @"TA1S", @"TA2S", @"TA3S" ];
         
         self.allVoltageKeys = @[ @"VC0C", @"VC1C", @"VC2C", @"VC3C", @"VC4C", @"VC5C", @"VC6C", @"VC7C", @"VV1R", @"VG0C", @"VM0R", @"VN1R", @"VN0C", @"VD0R", @"VD5R", @"VP0R", @"Vp0C", @"VV2S", @"VR3R", @"VV1S", @"VH05", @"VV9S", @"VD2R", @"VV7S", @"VV3S", @"VV8S", @"VeES", @"VBAT", @"Vb0R" ];

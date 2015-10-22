@@ -10,7 +10,7 @@
 
 #import "JSKCommon.h"
 
-#import "SMCWrapper/SMCWrapper.h"
+#import "SMCWrapper.h"
 
 @interface JSKSMC : NSObject
 

@@ -8,28 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		1D43C4CE1BD49B78001D8A55 /* SystemInfoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4CD1BD49B78001D8A55 /* SystemInfoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4D61BD49D72001D8A55 /* JSKSystemMonitor.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4D61BD49D72001D8A55 /* JSKSystemMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C4DE1BD49DA4001D8A55 /* smc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4DB1BD49DA4001D8A55 /* smc.h */; settings = {ASSET_TAGS = (); }; };
-		1D43C4DF1BD49DA4001D8A55 /* SMCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4DC1BD49DA4001D8A55 /* SMCWrapper.h */; settings = {ASSET_TAGS = (); }; };
-		1D43C4E01BD49DA4001D8A55 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4DD1BD49DA4001D8A55 /* SMCWrapper.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C4E31BD55161001D8A55 /* JSKSMC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E11BD55161001D8A55 /* JSKSMC.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C4E31BD55161001D8A55 /* JSKSMC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E11BD55161001D8A55 /* JSKSMC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E21BD55161001D8A55 /* JSKSMC.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E51BD55172001D8A55 /* JSKDevice.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E51BD55172001D8A55 /* JSKDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E61BD55172001D8A55 /* JSKDevice.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C4EC1BD55673001D8A55 /* JSKDCPUReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4EA1BD55673001D8A55 /* JSKDCPUReport.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C4EC1BD55673001D8A55 /* JSKDCPUReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4EA1BD55673001D8A55 /* JSKDCPUReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4EB1BD55673001D8A55 /* JSKDCPUReport.m */; settings = {ASSET_TAGS = (); }; };
 		1D43C5111BD56B1D001D8A55 /* SystemInfoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5101BD56B1D001D8A55 /* SystemInfoKitTests.m */; };
 		1D43C5131BD56B1D001D8A55 /* SystemInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C4CA1BD49B78001D8A55 /* SystemInfoKit.framework */; settings = {ASSET_TAGS = (); }; };
-		1D43C51C1BD57AB1001D8A55 /* JSKDSystemReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51A1BD57AB1001D8A55 /* JSKDSystemReport.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C51C1BD57AB1001D8A55 /* JSKDSystemReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51A1BD57AB1001D8A55 /* JSKDSystemReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C51D1BD57AB1001D8A55 /* JSKDSystemReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C5201BD57DB9001D8A55 /* JSKDNetworkReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51E1BD57DB9001D8A55 /* JSKDNetworkReport.h */; settings = {ASSET_TAGS = (); }; };
-		1D43C5211BD57DB9001D8A55 /* JSKDNetworkReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51F1BD57DB9001D8A55 /* JSKDNetworkReport.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C5201BD57DB9001D8A55 /* JSKMNetworkReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43C5211BD57DB9001D8A55 /* JSKMNetworkReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */; settings = {ASSET_TAGS = (); }; };
 		1D43C5231BD5A90A001D8A55 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C5221BD5A90A001D8A55 /* IOKit.framework */; };
-		1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */; settings = {ASSET_TAGS = (); }; };
+		1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */; settings = {ASSET_TAGS = (); }; };
 		1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1D43C52E1BD728E8001D8A55 /* .travis.yml */; settings = {ASSET_TAGS = (); }; };
-		1D43C5311BD7DFFA001D8A55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5301BD7DFFA001D8A55 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		1D43C5551BD85227001D8A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C5541BD85227001D8A55 /* Foundation.framework */; };
+		1D43C5561BD85299001D8A55 /* JSKCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E91BD5518F001D8A55 /* JSKCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43C5811BD8544E001D8A55 /* smc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C57E1BD8544E001D8A55 /* smc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43C5821BD8544E001D8A55 /* SMCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C57F1BD8544E001D8A55 /* SMCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D43C5831BD8544E001D8A55 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5801BD8544E001D8A55 /* SMCWrapper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +49,6 @@
 		1D43C4CF1BD49B78001D8A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D43C4D61BD49D72001D8A55 /* JSKSystemMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKSystemMonitor.h; sourceTree = "<group>"; };
 		1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKSystemMonitor.m; sourceTree = "<group>"; };
-		1D43C4DB1BD49DA4001D8A55 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
-		1D43C4DC1BD49DA4001D8A55 /* SMCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCWrapper.h; sourceTree = "<group>"; };
-		1D43C4DD1BD49DA4001D8A55 /* SMCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCWrapper.m; sourceTree = "<group>"; };
 		1D43C4E11BD55161001D8A55 /* JSKSMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKSMC.h; sourceTree = "<group>"; };
 		1D43C4E21BD55161001D8A55 /* JSKSMC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKSMC.m; sourceTree = "<group>"; };
 		1D43C4E51BD55172001D8A55 /* JSKDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKDevice.h; sourceTree = "<group>"; };
@@ -63,13 +61,16 @@
 		1D43C5121BD56B1D001D8A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D43C51A1BD57AB1001D8A55 /* JSKDSystemReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKDSystemReport.h; sourceTree = "<group>"; };
 		1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKDSystemReport.m; sourceTree = "<group>"; };
-		1D43C51E1BD57DB9001D8A55 /* JSKDNetworkReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKDNetworkReport.h; sourceTree = "<group>"; };
-		1D43C51F1BD57DB9001D8A55 /* JSKDNetworkReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKDNetworkReport.m; sourceTree = "<group>"; };
+		1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMNetworkReport.h; sourceTree = "<group>"; };
+		1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMNetworkReport.m; sourceTree = "<group>"; };
 		1D43C5221BD5A90A001D8A55 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMBatteryUsageInfo.h; sourceTree = "<group>"; };
 		1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMBatteryUsageInfo.m; sourceTree = "<group>"; };
 		1D43C52E1BD728E8001D8A55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		1D43C5301BD7DFFA001D8A55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D43C5541BD85227001D8A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D43C57E1BD8544E001D8A55 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		1D43C57F1BD8544E001D8A55 /* SMCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCWrapper.h; sourceTree = "<group>"; };
+		1D43C5801BD8544E001D8A55 /* SMCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D43C5551BD85227001D8A55 /* Foundation.framework in Frameworks */,
 				1D43C5231BD5A90A001D8A55 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1D43C52E1BD728E8001D8A55 /* .travis.yml */,
-				1D43C5301BD7DFFA001D8A55 /* README.md */,
+				1D43C5541BD85227001D8A55 /* Foundation.framework */,
 				1D43C5221BD5A90A001D8A55 /* IOKit.framework */,
 				1D43C4CC1BD49B78001D8A55 /* SystemInfoKit */,
 				1D43C50F1BD56B1D001D8A55 /* SystemInfoKitTests */,
@@ -126,22 +128,14 @@
 			path = SystemInfoKit;
 			sourceTree = "<group>";
 		};
-		1D43C4DA1BD49DA4001D8A55 /* SMCWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				1D43C4DB1BD49DA4001D8A55 /* smc.h */,
-				1D43C4DC1BD49DA4001D8A55 /* SMCWrapper.h */,
-				1D43C4DD1BD49DA4001D8A55 /* SMCWrapper.m */,
-			);
-			path = SMCWrapper;
-			sourceTree = "<group>";
-		};
 		1D43C4FB1BD56709001D8A55 /* SMC */ = {
 			isa = PBXGroup;
 			children = (
 				1D43C4E11BD55161001D8A55 /* JSKSMC.h */,
 				1D43C4E21BD55161001D8A55 /* JSKSMC.m */,
-				1D43C4DA1BD49DA4001D8A55 /* SMCWrapper */,
+				1D43C57E1BD8544E001D8A55 /* smc.h */,
+				1D43C57F1BD8544E001D8A55 /* SMCWrapper.h */,
+				1D43C5801BD8544E001D8A55 /* SMCWrapper.m */,
 			);
 			name = SMC;
 			sourceTree = "<group>";
@@ -151,6 +145,8 @@
 			children = (
 				1D43C4D61BD49D72001D8A55 /* JSKSystemMonitor.h */,
 				1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */,
+				1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */,
+				1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */,
 				1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */,
 				1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */,
 			);
@@ -166,8 +162,6 @@
 				1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */,
 				1D43C4EA1BD55673001D8A55 /* JSKDCPUReport.h */,
 				1D43C4EB1BD55673001D8A55 /* JSKDCPUReport.m */,
-				1D43C51E1BD57DB9001D8A55 /* JSKDNetworkReport.h */,
-				1D43C51F1BD57DB9001D8A55 /* JSKDNetworkReport.m */,
 			);
 			name = Device;
 			sourceTree = "<group>";
@@ -188,16 +182,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D43C4DE1BD49DA4001D8A55 /* smc.h in Headers */,
-				1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */,
-				1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */,
-				1D43C4DF1BD49DA4001D8A55 /* SMCWrapper.h in Headers */,
 				1D43C4CE1BD49B78001D8A55 /* SystemInfoKit.h in Headers */,
-				1D43C5201BD57DB9001D8A55 /* JSKDNetworkReport.h in Headers */,
+				1D43C5561BD85299001D8A55 /* JSKCommon.h in Headers */,
+				1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */,
 				1D43C4E31BD55161001D8A55 /* JSKSMC.h in Headers */,
+				1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */,
+				1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */,
+				1D43C5201BD57DB9001D8A55 /* JSKMNetworkReport.h in Headers */,
+				1D43C5811BD8544E001D8A55 /* smc.h in Headers */,
+				1D43C5821BD8544E001D8A55 /* SMCWrapper.h in Headers */,
 				1D43C51C1BD57AB1001D8A55 /* JSKDSystemReport.h in Headers */,
 				1D43C4EC1BD55673001D8A55 /* JSKDCPUReport.h in Headers */,
-				1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,13 +295,12 @@
 			files = (
 				1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */,
 				1D43C51D1BD57AB1001D8A55 /* JSKDSystemReport.m in Sources */,
-				1D43C5211BD57DB9001D8A55 /* JSKDNetworkReport.m in Sources */,
+				1D43C5211BD57DB9001D8A55 /* JSKMNetworkReport.m in Sources */,
 				1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */,
 				1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */,
 				1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */,
-				1D43C5311BD7DFFA001D8A55 /* README.md in Sources */,
 				1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */,
-				1D43C4E01BD49DA4001D8A55 /* SMCWrapper.m in Sources */,
+				1D43C5831BD8544E001D8A55 /* SMCWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
