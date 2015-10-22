@@ -32,5 +32,7 @@ SystemInfoKit, SMCWrapper, and the original SMC tool are released under the GNU 
 ### Copyright
 
 SystemInfoKit copyright © 2015 JRW (@jBot-42)
+
 SMCWrapper copyright © 2014 Fergus Morrow (@FergusInLondon)
+
 Apple SMC Tool copyright © 2006 devnull 
