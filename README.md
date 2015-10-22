@@ -19,13 +19,7 @@ SystemInfoKit provides a comprehensive system monitoring class which can be used
 
 ## How To Use
 
-SystemInfoKit is broken up into 3 main modules: JSKDevice, which accesses device information, JSKSMC, which accesses the SMC, and JSKSystemMonitor, which can be used for system monitoring.
-
-### JSKDevice
-
-### JSKSMC
-
-### JSKSystemMonitor
+Visit SystemInfoKit's website here: http://jbot-42.github.io/systeminfokit.html
 
 ## Contributions
 
