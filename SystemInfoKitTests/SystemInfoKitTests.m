@@ -88,17 +88,17 @@
     
     JSKMMemoryUsageInfo memoryUsageInfo = systemMonitor.memoryUsageInfo;
     
-    NSLog(@"Memory Usage: %lld Free, %lld Used, %lld Active, %lld Inactive, %lld Compressed, %lld Wired", memoryUsageInfo.freeMemory, memoryUsageInfo.usedMemory, memoryUsageInfo.activeMemory, memoryUsageInfo.inactiveMemory, memoryUsageInfo.compressedMemory, memoryUsageInfo.wiredMemory);
+    NSLog(@"Memory Usage: %lld B Free, %lld B Used, %lld B Active, %lld B Inactive, %lld B Compressed, %lld B Wired", memoryUsageInfo.freeMemory, memoryUsageInfo.usedMemory, memoryUsageInfo.activeMemory, memoryUsageInfo.inactiveMemory, memoryUsageInfo.compressedMemory, memoryUsageInfo.wiredMemory);
     
     JSKMDiskUsageInfo diskUsageInfo = systemMonitor.diskUsageInfo;
     
-    NSLog(@"Disk Usage: %lld Free, %lld Used, %lld Total", diskUsageInfo.freeDiskSpace, diskUsageInfo.usedDiskSpace, diskUsageInfo.totalDiskSpace);
+    NSLog(@"Disk Usage: %lld B Free, %lld B Used, %lld B Total", diskUsageInfo.freeDiskSpace, diskUsageInfo.usedDiskSpace, diskUsageInfo.totalDiskSpace);
     
     JSKMNetworkUsageInfo networkUsageInfo = systemMonitor.networkUsageInfo;
     
-    NSLog(@"Network Usage: %lld Out, %lld In", networkUsageInfo.totalOutBytes, networkUsageInfo.totalInBytes);
+    NSLog(@"Network Usage: %lld B Out, %lld B In", networkUsageInfo.totalOutBytes, networkUsageInfo.totalInBytes);
     
-    NSLog(@"System Uptime: %f", systemMonitor.systemUptime);
+    NSLog(@"System Uptime: %f S", systemMonitor.systemUptime);
     
     JSKMNetworkReport *networkInfo = systemMonitor.networkInfo;
     
