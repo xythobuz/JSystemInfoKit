@@ -53,6 +53,11 @@
     
     NSLog(@"CPU Architecture: %@", stringFromJSKDCPUArchitecture(device.cpuInfo.architecture));
     
+    NSLog(@"Battery Serial: %@", device.batteryInfo.serial);
+    NSLog(@"Battery Model: %@", device.batteryInfo.model);
+    NSLog(@"Battery Manufacturer: %@", device.batteryInfo.manufacturer);
+    NSLog(@"Battery Date Of Manufacture: %@", device.batteryInfo.dateOfManufacture);
+    
     JSKSMC *smc = [JSKSMC smc];
     
     for (int i = 0; i < [[smc workingTempKeys] count]; i++) {
@@ -106,12 +111,7 @@
     NSLog(@"Public IP Address: %@", networkInfo.publicIpAddress);
     NSLog(@"Host Name: %@", networkInfo.hostName);
     
-    JSKMBatteryUsageInfo *batteryUsageInfo = systemMonitor.batteryUsageInfo;
-    
-    NSLog(@"Battery Serial: %@", batteryUsageInfo.serial);
-    NSLog(@"Battery Model: %@", batteryUsageInfo.model);
-    NSLog(@"Battery Manufacturer: %@", batteryUsageInfo.manufacturer);
-    NSLog(@"Battery Date Of Manufacture: %@", batteryUsageInfo.dateOfManufacture);
+    JSKMBatteryUsageInfo batteryUsageInfo = systemMonitor.batteryUsageInfo;
     
     NSLog(@"Battery Installed: %hhd", batteryUsageInfo.present);
     NSLog(@"Battery Fully Charged: %hhd", batteryUsageInfo.full);

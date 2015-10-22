@@ -11,6 +11,7 @@
 #import "JSKCommon.h"
 #import "JSKDSystemReport.h"
 #import "JSKDCPUReport.h"
+#import "JSKDBatteryReport.h"
 
 #import <mach/machine.h>
 
@@ -20,5 +21,6 @@
 
 @property (strong) JSKDSystemReport *systemInfo;
 @property (strong) JSKDCPUReport *cpuInfo;
+@property (strong) JSKDBatteryReport *batteryInfo;
 
 @end

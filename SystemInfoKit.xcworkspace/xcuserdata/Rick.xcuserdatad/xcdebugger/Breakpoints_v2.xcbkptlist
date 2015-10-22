@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "305"
             endingLineNumber = "305"
-            landmarkName = "-batteryUsageInfo"
+            landmarkName = "-networkInfo"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

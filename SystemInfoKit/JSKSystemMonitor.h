@@ -10,7 +10,6 @@
 
 #import "JSKCommon.h"
 #import "JSKMNetworkReport.h"
-#import "JSKMBatteryUsageInfo.h"
 
 #import <sys/sysctl.h>
 
@@ -35,6 +34,6 @@ static NSLock *CPUUsageLock;
 @property (assign, atomic, readonly) JSKMDiskUsageInfo diskUsageInfo;
 @property (assign, atomic, readonly) JSKMNetworkUsageInfo networkUsageInfo;
 @property (assign, atomic, readonly) JSKMNetworkReport *networkInfo;
-@property (assign, atomic, readonly) JSKMBatteryUsageInfo *batteryUsageInfo;
+@property (assign, atomic, readonly) JSKMBatteryUsageInfo batteryUsageInfo;
 
 @end

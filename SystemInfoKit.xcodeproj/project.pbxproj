@@ -9,28 +9,27 @@
 /* Begin PBXBuildFile section */
 		1D43C4CE1BD49B78001D8A55 /* SystemInfoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4CD1BD49B78001D8A55 /* SystemInfoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4D61BD49D72001D8A55 /* JSKSystemMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */; };
 		1D43C4E31BD55161001D8A55 /* JSKSMC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E11BD55161001D8A55 /* JSKSMC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E21BD55161001D8A55 /* JSKSMC.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E21BD55161001D8A55 /* JSKSMC.m */; };
 		1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E51BD55172001D8A55 /* JSKDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E61BD55172001D8A55 /* JSKDevice.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4E61BD55172001D8A55 /* JSKDevice.m */; };
 		1D43C4EC1BD55673001D8A55 /* JSKDCPUReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4EA1BD55673001D8A55 /* JSKDCPUReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4EB1BD55673001D8A55 /* JSKDCPUReport.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C4EB1BD55673001D8A55 /* JSKDCPUReport.m */; };
 		1D43C5111BD56B1D001D8A55 /* SystemInfoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5101BD56B1D001D8A55 /* SystemInfoKitTests.m */; };
-		1D43C5131BD56B1D001D8A55 /* SystemInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C4CA1BD49B78001D8A55 /* SystemInfoKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1D43C5131BD56B1D001D8A55 /* SystemInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C4CA1BD49B78001D8A55 /* SystemInfoKit.framework */; };
 		1D43C51C1BD57AB1001D8A55 /* JSKDSystemReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51A1BD57AB1001D8A55 /* JSKDSystemReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C51D1BD57AB1001D8A55 /* JSKDSystemReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C51D1BD57AB1001D8A55 /* JSKDSystemReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */; };
 		1D43C5201BD57DB9001D8A55 /* JSKMNetworkReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C5211BD57DB9001D8A55 /* JSKMNetworkReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C5211BD57DB9001D8A55 /* JSKMNetworkReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */; };
 		1D43C5231BD5A90A001D8A55 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C5221BD5A90A001D8A55 /* IOKit.framework */; };
-		1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */; settings = {ASSET_TAGS = (); }; };
-		1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1D43C52E1BD728E8001D8A55 /* .travis.yml */; settings = {ASSET_TAGS = (); }; };
 		1D43C5551BD85227001D8A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D43C5541BD85227001D8A55 /* Foundation.framework */; };
 		1D43C5561BD85299001D8A55 /* JSKCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C4E91BD5518F001D8A55 /* JSKCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C5811BD8544E001D8A55 /* smc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C57E1BD8544E001D8A55 /* smc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D43C5821BD8544E001D8A55 /* SMCWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D43C57F1BD8544E001D8A55 /* SMCWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D43C5831BD8544E001D8A55 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5801BD8544E001D8A55 /* SMCWrapper.m */; settings = {ASSET_TAGS = (); }; };
+		1D43C5831BD8544E001D8A55 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43C5801BD8544E001D8A55 /* SMCWrapper.m */; };
+		1DFEC3E71BD9646F006F4D6E /* JSKDBatteryReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFEC3E51BD9646F006F4D6E /* JSKDBatteryReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DFEC3E81BD9646F006F4D6E /* JSKDBatteryReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFEC3E61BD9646F006F4D6E /* JSKDBatteryReport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +63,13 @@
 		1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMNetworkReport.h; sourceTree = "<group>"; };
 		1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMNetworkReport.m; sourceTree = "<group>"; };
 		1D43C5221BD5A90A001D8A55 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKMBatteryUsageInfo.h; sourceTree = "<group>"; };
-		1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKMBatteryUsageInfo.m; sourceTree = "<group>"; };
 		1D43C52E1BD728E8001D8A55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 		1D43C5541BD85227001D8A55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D43C57E1BD8544E001D8A55 /* smc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
 		1D43C57F1BD8544E001D8A55 /* SMCWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCWrapper.h; sourceTree = "<group>"; };
 		1D43C5801BD8544E001D8A55 /* SMCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCWrapper.m; sourceTree = "<group>"; };
+		1DFEC3E51BD9646F006F4D6E /* JSKDBatteryReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKDBatteryReport.h; sourceTree = "<group>"; };
+		1DFEC3E61BD9646F006F4D6E /* JSKDBatteryReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKDBatteryReport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +146,6 @@
 				1D43C4D71BD49D72001D8A55 /* JSKSystemMonitor.m */,
 				1D43C51E1BD57DB9001D8A55 /* JSKMNetworkReport.h */,
 				1D43C51F1BD57DB9001D8A55 /* JSKMNetworkReport.m */,
-				1D43C52A1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h */,
-				1D43C52B1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m */,
 			);
 			name = "System Monitor";
 			sourceTree = "<group>";
@@ -162,6 +159,8 @@
 				1D43C51B1BD57AB1001D8A55 /* JSKDSystemReport.m */,
 				1D43C4EA1BD55673001D8A55 /* JSKDCPUReport.h */,
 				1D43C4EB1BD55673001D8A55 /* JSKDCPUReport.m */,
+				1DFEC3E51BD9646F006F4D6E /* JSKDBatteryReport.h */,
+				1DFEC3E61BD9646F006F4D6E /* JSKDBatteryReport.m */,
 			);
 			name = Device;
 			sourceTree = "<group>";
@@ -187,10 +186,10 @@
 				1D43C4E71BD55172001D8A55 /* JSKDevice.h in Headers */,
 				1D43C4E31BD55161001D8A55 /* JSKSMC.h in Headers */,
 				1D43C4D81BD49D72001D8A55 /* JSKSystemMonitor.h in Headers */,
-				1D43C52C1BD7014B001D8A55 /* JSKMBatteryUsageInfo.h in Headers */,
 				1D43C5201BD57DB9001D8A55 /* JSKMNetworkReport.h in Headers */,
 				1D43C5811BD8544E001D8A55 /* smc.h in Headers */,
 				1D43C5821BD8544E001D8A55 /* SMCWrapper.h in Headers */,
+				1DFEC3E71BD9646F006F4D6E /* JSKDBatteryReport.h in Headers */,
 				1D43C51C1BD57AB1001D8A55 /* JSKDSystemReport.h in Headers */,
 				1D43C4EC1BD55673001D8A55 /* JSKDCPUReport.h in Headers */,
 			);
@@ -275,7 +274,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D43C52F1BD728E8001D8A55 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,13 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D43C52D1BD7014B001D8A55 /* JSKMBatteryUsageInfo.m in Sources */,
 				1D43C51D1BD57AB1001D8A55 /* JSKDSystemReport.m in Sources */,
 				1D43C5211BD57DB9001D8A55 /* JSKMNetworkReport.m in Sources */,
 				1D43C4ED1BD55673001D8A55 /* JSKDCPUReport.m in Sources */,
 				1D43C4E41BD55161001D8A55 /* JSKSMC.m in Sources */,
 				1D43C4D91BD49D72001D8A55 /* JSKSystemMonitor.m in Sources */,
 				1D43C4E81BD55172001D8A55 /* JSKDevice.m in Sources */,
+				1DFEC3E81BD9646F006F4D6E /* JSKDBatteryReport.m in Sources */,
 				1D43C5831BD8544E001D8A55 /* SMCWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

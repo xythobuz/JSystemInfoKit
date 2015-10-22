@@ -315,7 +315,7 @@
     return report;
 }
 
-- (JSKMBatteryUsageInfo *)batteryUsageInfo {
+- (JSKMBatteryUsageInfo)batteryUsageInfo {
     
     mach_port_t masterPort;
     kern_return_t masterPortResult;
@@ -324,14 +324,14 @@
     
     if (masterPortResult != kIOReturnSuccess) {
         
-        return [[JSKMBatteryUsageInfo alloc] init];
+        return (JSKMBatteryUsageInfo){};
     }
     
     io_registry_entry_t 	batteryEntry = IOServiceGetMatchingService(masterPort, IOServiceMatching("IOPMPowerSource"));
     
     if (batteryEntry == 0) {
        
-        return [[JSKMBatteryUsageInfo alloc] init];
+        return (JSKMBatteryUsageInfo){};
     }
     
     CFMutableDictionaryRef batteryProperties = NULL;
@@ -339,29 +339,11 @@
     
     if (result != kIOReturnSuccess) {
         
-        return [[JSKMBatteryUsageInfo alloc] init];
+        return (JSKMBatteryUsageInfo){};
         
     } else {
         
         NSDictionary *batteryDictionary = (__bridge_transfer NSDictionary *)batteryProperties;
-        
-        /*updateWithIsPresent:[[batteryRawDict objectForKey:@"BatteryInstalled"] intValue]
-									isFull:[[batteryRawDict objectForKey:@"FullyCharged"] intValue]
-         isCharging:[[batteryRawDict objectForKey:@"IsCharging"] intValue]
-         isACConnected:[[batteryRawDict objectForKey:@"ExternalConnected"] intValue]
-         amperage:[batteryRawDict objectForKey:@"Amperage"]
-						   currentCapacity:[batteryRawDict objectForKey:@"CurrentCapacity"]
-         maxCapacity:[batteryRawDict objectForKey:@"MaxCapacity"]
-         voltage:[batteryRawDict objectForKey:@"Voltage"]
-         cycleCount:[batteryRawDict objectForKey:@"CycleCount"]
-									health:@(([[batteryRawDict objectForKey:@"MaxCapacity"] intValue] / [[batteryRawDict objectForKey:@"DesignCapacity"] intValue])*100)
-         temperature:@([[batteryRawDict objectForKey:@"Temperature"] doubleValue] / 100)
-         power:@([[batteryRawDict objectForKey:@"Amperage"] doubleValue] / 1000 * [[batteryRawDict objectForKey:@"Voltage"] doubleValue] / 1000)
-         age:@([differenceDate day])];*/
-        
-        NSString *serial = [batteryDictionary objectForKey:@"BatterySerialNumber"];
-        NSString *model = [batteryDictionary objectForKey:@"DeviceName"];
-        NSString *manufacturer = [batteryDictionary objectForKey:@"Manufacturer"];
         
         BOOL present = [[batteryDictionary objectForKey:@"BatteryInstalled"] boolValue];
         BOOL full = [[batteryDictionary objectForKey:@"FullyCharged"] boolValue];
@@ -390,7 +372,7 @@
         
         NSUInteger ageInDays = [[[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:dateOfManufacture toDate:[NSDate date] options:0] day];
         
-        JSKMBatteryUsageInfo *batteryUsageInfo = [[JSKMBatteryUsageInfo alloc] initWithSerial:serial model:model manufacturer:manufacturer dateOfManufacture:dateOfManufacture present:present full:full acConnected:acConnected charging:charging voltage:voltage amperage:amperage designCapacity:designCapacity maximumCapacity:maximumCapacity currentCapacity:currentCapacity designCycleCount:designCycleCount cycleCount:cycleCount ageInDays:ageInDays];
+        JSKMBatteryUsageInfo batteryUsageInfo = (JSKMBatteryUsageInfo){present, full, acConnected, charging, voltage, amperage, designCapacity, maximumCapacity, currentCapacity, designCycleCount, cycleCount, ageInDays};
         
         return batteryUsageInfo;
     }

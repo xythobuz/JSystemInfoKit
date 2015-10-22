@@ -12,6 +12,7 @@
 
 - (void)getSystemInfo;
 - (void)getCPUInfo;
+- (void)getBatteryInfo;
 
 @end
 
@@ -35,6 +36,7 @@
         
         [self getCPUInfo];
         [self getSystemInfo];
+        [self getBatteryInfo];
     }
     
     return self;
@@ -220,6 +222,62 @@
     JSKDSystemReport *report = [[JSKDSystemReport alloc] initWithUUID:uuid serial:serial rawModelString:rawModelString boardId:boardId physicalMemory:[[NSProcessInfo processInfo] physicalMemory] family:family endianness:endianness displayResolution:[NSScreen mainScreen].frame.size];
     
     self.systemInfo = report;
+}
+
+- (void)getBatteryInfo {
+    
+    mach_port_t masterPort;
+    kern_return_t masterPortResult;
+    
+    masterPortResult = IOMasterPort(bootstrap_port, &masterPort);
+    
+    if (masterPortResult != kIOReturnSuccess) {
+        
+        JSKDBatteryReport *report = [[JSKDBatteryReport alloc] init];
+        
+        self.batteryInfo = report;
+    }
+    
+    io_registry_entry_t 	batteryEntry = IOServiceGetMatchingService(masterPort, IOServiceMatching("IOPMPowerSource"));
+    
+    if (batteryEntry == 0) {
+        
+        JSKDBatteryReport *report = [[JSKDBatteryReport alloc] init];
+        
+        self.batteryInfo = report;
+    }
+    
+    CFMutableDictionaryRef batteryProperties = NULL;
+    kern_return_t result = IORegistryEntryCreateCFProperties(batteryEntry, &batteryProperties, NULL, 0);
+    
+    if (result != kIOReturnSuccess) {
+        
+        JSKDBatteryReport *report = [[JSKDBatteryReport alloc] init];
+        
+        self.batteryInfo = report;
+        
+    } else {
+        
+        NSDictionary *batteryDictionary = (__bridge_transfer NSDictionary *)batteryProperties;
+        
+        NSString *serial = [batteryDictionary objectForKey:@"BatterySerialNumber"];
+        NSString *model = [batteryDictionary objectForKey:@"DeviceName"];
+        NSString *manufacturer = [batteryDictionary objectForKey:@"Manufacturer"];
+        
+        // This code comes from Perceval Faramaz
+        NSUInteger manufactureDateInt = [[batteryDictionary objectForKey:@"ManufactureDate"] intValue];
+        
+        NSDateComponents *manufactureDateComponents = [[NSDateComponents alloc] init];
+        manufactureDateComponents.year = (manufactureDateInt >> 9) + 1980;
+        manufactureDateComponents.month = (manufactureDateInt >> 5) & 0xF;
+        manufactureDateComponents.day = manufactureDateInt & 0x1F;
+        
+        NSDate *dateOfManufacture = [[NSCalendar currentCalendar] dateFromComponents:manufactureDateComponents];
+        
+        JSKDBatteryReport *report = [[JSKDBatteryReport alloc] initWithSerial:serial model:model manufacturer:manufacturer dateOfManufacture:dateOfManufacture];
+        
+        self.batteryInfo = report;
+    }
 }
 
 @end

@@ -278,6 +278,23 @@ typedef struct {
     
 } JSKMNetworkUsageInfo;
 
+typedef struct {
+    
+    BOOL present;
+    BOOL full;
+    BOOL acConnected;
+    BOOL charging;
+    double voltage;
+    double amperage;
+    double designCapacity;
+    double maximumCapacity;
+    double currentCapacity;
+    NSUInteger designCycleCount;
+    NSUInteger cycleCount;
+    NSUInteger ageInDays;
+    
+} JSKMBatteryUsageInfo;
+
 // Convert C to F
 static inline double celsiusToFahrenheit(double celsius) {
     
