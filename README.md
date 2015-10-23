@@ -1,7 +1,11 @@
 ![Logo](/Icon.png)
 
 # SystemInfoKit ![] (https://img.shields.io/travis/jBot-42/JSystemInfoKit.svg)
-A comprehensive, compact, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
+A comprehensive, well documented, and well tested system information framework for Cocoa on OS X by the creator of the most complete source on the SMC. 
+
+## How To Use
+
+Visit SystemInfoKit's website here for complete documentation: http://jbot-42.github.io/systeminfokit.html
 
 ## Features
 
@@ -16,10 +20,6 @@ SystemInfoKit's SMC integration is based on [SMCWrapper](https://github.com/Ferg
 ### Built-in System Monitoring Functions
 
 SystemInfoKit provides a comprehensive system monitoring class which can be used to find CPU usage, memory usage, disk usage, network usage, and even detailed information on the battery.
-
-## How To Use
-
-Visit SystemInfoKit's website here: http://jbot-42.github.io/systeminfokit.html
 
 ## Contributions
 
